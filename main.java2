@@ -1,0 +1,63 @@
+package quiz.no2;
+
+class MahlukHidup{
+    String nafas;
+    String berkembang_biak;
+    String jenis_makanan;
+}
+
+class manusia extends MahlukHidup{
+    String nafas = "paru-paru";
+    String berkembang_biak = "melahirkan";
+    String jenis_makanan = "omivora";
+    
+    void manusia(){
+        System.out.println("manusia adalah mahluk hidup yang paling sempurna");
+    }
+}    
+
+class ayam extends MahlukHidup{
+    String nafas = "paru-paru";
+    String berkembang_biak = "bertelur";
+    String jenis_makanan = "omivora";
+    
+    void ayam(){
+        System.out.println("ayam berjalan-jalan didepan rumah untuk mencari makan");
+    }
+}
+
+class singa extends MahlukHidup{
+    String nafas = "paru-paru";
+    String berkembang_biak = "melahirkan";
+    String jenis_makanan = "karnivora";
+    
+    void singa(){
+        System.out.println("singa merupakan raja hutan");
+    }
+}
+
+public class main {
+    public static void main(String[] args) {
+        manusia niken = new manusia();
+        System.out.println("mahluk hidup ini bernafas dengan " + niken.nafas);
+        System.out.println("mahluk hidup berkembang biak dengan " + niken.berkembang_biak);
+        System.out.println("jenis makanan " + niken.jenis_makanan);
+        niken.manusia();
+        
+        System.out.println("======================================");
+        
+        ayam jantan = new ayam();
+        System.out.println("mahluk hidup ini bernafas dengan " + jantan.nafas);
+        System.out.println("mahluk hidup berkembang biak dengan " + jantan.berkembang_biak);
+        System.out.println("jenis makanan " + jantan.jenis_makanan);
+        jantan.ayam();
+        
+        System.out.println("======================================");
+        
+        singa king = new singa();
+        System.out.println("mahluk hidup ini bernafas dengan " + king.nafas);
+        System.out.println("mahluk hidup berkembang biak dengan " + king.berkembang_biak);
+        System.out.println("jenis makanan " + king.jenis_makanan);
+        king.singa();
+    }
+}
